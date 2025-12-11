@@ -1,4 +1,4 @@
-# WalmartSparkathon
+# Walmart(Sparkathon) - Trylectt
 
 Tryllect – AI Fashion Assistant
 ◦ Multilingual voice-activated AI fashion shopping platform
