@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 require('dotenv').config();
 const Stripe = require('stripe');
-const stripe = new Stripe(process.env.SENDGRID_API_KEY);
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 router.post('/create-checkout-session', async (req, res) => {
   const { items, user } = req.body;
