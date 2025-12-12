@@ -14,12 +14,8 @@ app.use(cors());
 app.use(express.json());
 
 
-
-// WO97ZuLImm4WHIwa
 // ✅ MongoDB connection
-mongoose.connect(
-  'mongodb+srv://jadhavsanyog400:WO97ZuLImm4WHIwa@cluster0.fulpgez.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-)
+mongoose.connect(process.env.MONGODB_URL)
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.log("❌ MongoDB error:", err));
 
